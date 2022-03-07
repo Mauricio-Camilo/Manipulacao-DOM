@@ -1,79 +1,116 @@
-// window.alert("ola mundo");
-// window.prompt("digite seu nome");
-// const nome = "Mauricio";
-// window.console.log(nome);
+/* DEMONSTRAÇÃO DE WINDOW */
 
-// const listaPratos2 = document.querySelector("ul");
-// // const elementos = listaPratos.childElementCount;
-// // console.log (elementos);
-// const nodes = listaPratos2.childNodes;
+// window.alert("Olá mundo");
+// window.prompt("Digite seu nome");
+// const array = [1,2,3,4,5];
+// window.console.log(array);
+
+/* EXPLICAÇÃO DE NÓS E NODELIST */
+
+// const listaPratos = document.querySelector("#pratos")
+// const elementos = listaPratos.childElementCount;
+// console.log(elementos);
+// const nodes = listaPratos.childNodes;
 // console.log(nodes);
 
 
-// const listaPratos = document.querySelectorAll("li");
-// console.log(listaPratos[0].innerHTML);
+/* NODELIST E ARRAYS */
+
+// const listaPratosQSA = document.querySelectorAll('li')
+// console.log(listaPratosQSA);
 
 // const listaManual = ["Pizza","Macarronada","Feijoada","Churrasco"];
-// console.log(listaManual[0]);
+// console.log(listaManual.length);
 
-// const listaPratos = document.querySelectorAll("li");
-// let array1 = [...listaPratos];
+// let array1 = [...listaPratosQSA];
 // console.log(array1);
-// let array2 = Array.from(listaPratos);
+
+// let array2 = Array.from(listaPratosQSA);
 // console.log(array2);
 
-// const listaPratos = document.querySelector("#pratos li");
-// console.log(listaPratos);
+ /* DIFERENÇA ENTRE CLASSE E ID */
 
-// const listaComidas = document.getElementById("pratos");
-// console.log(listaComidas);
+// const listaPratoclass = document.querySelector("ul");
+// console.log(listaPratoclass);
 
-// const listaPratos = document.querySelectorAll("li")
-// console.log(listaPratos);
+// const listaPratoid = document.querySelector("#comida");
+// console.log(listaPratoid);
 
-// const listaComidas = document.getElementsByClassName("prato");
-// console.log(listaComidas);
+/* DIFERENÇA ENTRE QUERYSELECTOR E GETELEMENTBYID */
+
+// const listaPratosQS = document.querySelector('#pratos li')
+// console.log(listaPratosQS);
+
+// const listaPratosID = document.getElementById('pratos')
+// console.log(listaPratosID);
+
+
+/* DIFERENÇA ENTRE QUERYSELECTORALL E GETELEMENTSBY */
+
+// const listaPratosClass = document.getElementsByClassName('prato')
+// console.log(listaPratosClass);
+
+// const listaPratosQSA = document.querySelectorAll('.prato')
+// console.log(listaPratosQSA);
+
+
+/* DIFERENÇA ENTRE HTML COLLECTION E NODELIST */
+
 
 // const pratos = document.getElementsByClassName("prato");
 // console.log(pratos);
-// pratos.forEach (prato => {
+// for (let i = 0; i < pratos.length; i ++) {
+//     console.log(pratos[i])
+// }
+
+// const pratos = document.querySelectorAll("li");
+// console.log(pratos);
+// pratos.forEach(prato => {
 //     console.log(prato);
 // })
 
-// const lista = document.querySelector("ul");
-// const lista1 = lista.innerText;
-// console.log(lista1);
-// const lista2 = lista.innerHTML;
-// console.log(lista2);
-// const lista3 = lista.textContent;
-// console.log(lista3);
 
-// const novaDiv = document.createElement("div");
-// novaDiv.classList.add("nova-classe");
-// const novoParagrafo = document.createElement("p");
+/* DIFERENÇA ENTRE TEXTOS */
+
+// const lista = document.querySelector(".ul")
+// const conteudoLista1 = lista.innerText;
+// console.log(conteudoLista1);
+// const conteudoLista2 = lista.innerHTML;
+// console.log(conteudoLista2);
+// const conteudoLista3 = lista.textContent;
+// console.log(conteudoLista3);
+
+/* CRIAÇÃO DE ELEMENTOS DIRETAMENTE PELO JS */
+
+// const novaDiv = document.createElement("div")
+// novaDiv.classList.add ("nova-classe")
+// console.log(novaDiv);
+// const novoParagrafo = document.createElement("p")
 // novoParagrafo.innerHTML += "Criar elementos aqui";
-// console.log(novoParagrafo);
+// console.log (novoParagrafo);
 // novaDiv.appendChild(novoParagrafo);
 // console.log (novaDiv);
 // const body = document.querySelector("body");
 // body.appendChild(novaDiv);
 
-// let listaPratos = document.getElementById("pratos");
-// const listaItens = document.getElementsByTagName("li");
-// const botao = document.querySelector("button");
-// botao.addEventListener('click',() => {
+/* LISTA ESTÁTICA X LISTA DINÂMICA */
+
+// const listaPratos = document.getElementById("pratos");
+
+/* Com esse comando a lista dinâmica não funciona
+// const listaItens = document.querySelectorAll("li")
+
+/* Com esse comando a lista dinâmica funciona */
+// const listaItens = document.getElementsByTagName("li")
+
+// const button = document.querySelector("button");
+// console.log(button)
+// button.addEventListener('click', () => {
 //     const li = document.createElement("li");
-//     li.textContent += "Pastel";
+//     li.textContent += "pastel";
 //     listaPratos.appendChild(li);
 //     console.log(listaItens.length);
 // })
-
-
-
-
-
-
-
 
 
 
